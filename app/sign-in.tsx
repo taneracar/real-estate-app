@@ -1,12 +1,12 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const Index = () => {
+const SingIn = () => {
   return (
     <View>
-      <Text>index</Text>
+      <Text>SingIn</Text>
     </View>
   )
 }
 
-export default Index
+export default SingIn
