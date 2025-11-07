@@ -12,7 +12,7 @@ export default function Index() {
       }}
     >
 
-      <Text className="text-xl font-bold text-blue-500">
+      <Text className="text-3xl font-rubik font-bold text-blue-500">
         Welcome to Nativewind!
       </Text>
       <Link href="/sign-in">Go to Sign in</Link>
