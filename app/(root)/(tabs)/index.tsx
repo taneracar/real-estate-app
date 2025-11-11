@@ -115,6 +115,7 @@ const Home = () => {
                 <NoResults />
               ) : (
                 <FlatList
+                bounces={false}
                   data={latestProperties}
                   renderItem={({ item }) => (
                     <FeaturedCard
