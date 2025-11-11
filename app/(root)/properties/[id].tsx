@@ -1,22 +1,22 @@
+import { router, useLocalSearchParams } from "expo-router";
 import {
+  Dimensions,
   FlatList,
   Image,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
-  Dimensions,
-  Platform,
 } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
 
-import icons from "@/constants/icons";
-import images from "@/constants/images";
 import Comment from "@/components/Comment";
 import { facilities } from "@/constants/data";
+import icons from "@/constants/icons";
+import images from "@/constants/images";
 
-import { useAppwrite } from "@/lib/useAppwrite";
 import { getPropertyById } from "@/lib/appwrite";
+import { useAppwrite } from "@/lib/useAppwrite";
 
 const Property = () => {
   const { id } = useLocalSearchParams<{ id?: string }>();
