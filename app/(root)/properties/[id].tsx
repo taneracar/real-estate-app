@@ -5,6 +5,7 @@ import {
   Image,
   Platform,
   ScrollView,
+  StatusBar,
   Text,
   TouchableOpacity,
   View,
@@ -32,6 +33,10 @@ const Property = () => {
 
   return (
     <View>
+      <StatusBar
+        barStyle="dark-content"
+        hidden={false}
+      />
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerClassName="pb-32 bg-white"
