@@ -122,7 +122,7 @@ const Property = () => {
             <View className="flex flex-row items-center justify-between mt-4">
               <View className="flex flex-row items-center">
                 <Image
-                  source={{ uri: property?.agent.avatar }}
+                  source={ images.avatar}
                   className="size-14 rounded-full"
                 />
 
