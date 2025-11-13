@@ -54,6 +54,22 @@ const Home = () => {
   }, [params.filter, params.query]);
 
   const handleCardPress = (id: string) => router.push(`/properties/${id}`);
+  const getGreeting = () => {
+  const now = new Date();
+  const hour = now.getHours();
+
+  let greeting = "";
+  if (hour >= 5 && hour < 12) {
+    greeting = "Good Morning"; 
+  } else if (hour >= 12 && hour < 17) {
+    greeting = "Good Afternoon"; 
+  } else if (hour >= 17 && hour < 21) {
+    greeting = "Good Evening"; 
+  } else {
+    greeting = "Good Night"; 
+  }
+  return `${greeting}!`;
+};
 
   return (
     <SafeAreaView className="h-full bg-white">
@@ -85,7 +101,7 @@ const Home = () => {
 
                 <View className="flex flex-col items-start ml-2 justify-center">
                   <Text className="text-xs font-rubik text-black-100">
-                    Good Morning
+                    {getGreeting()}
                   </Text>
                   <Text className="text-base font-rubik-medium text-black-300">
                     {user?.name}
