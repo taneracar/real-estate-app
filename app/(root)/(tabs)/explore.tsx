@@ -1,23 +1,23 @@
-import {
-  ActivityIndicator,
-  FlatList,
-  Image,
-  SafeAreaView,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import { useEffect } from "react";
 import { router, useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
+import {
+    ActivityIndicator,
+    FlatList,
+    Image,
+    SafeAreaView,
+    Text,
+    TouchableOpacity,
+    View,
+} from "react-native";
 
-import icons from "@/constants/icons";
-import Search from "@/components/Search";
 import { Card } from "@/components/Cards";
 import NoResults from "@/components/NoResults";
+import Search from "@/components/Search";
+import icons from "@/constants/icons";
 
+import Filters from "@/components/Filter";
 import { getProperties } from "@/lib/appwrite";
 import { useAppwrite } from "@/lib/useAppwrite";
-import Filters from "@/components/Filter";
 
 const Explore = () => {
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
@@ -58,7 +58,7 @@ const Explore = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           loading ? (
-            <ActivityIndicator size="large" className="text-primary-300 mt-5" />
+            <ActivityIndicator size="large" className="text-orange-300 mt-5" />
           ) : (
             <NoResults />
           )
