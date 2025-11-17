@@ -85,7 +85,7 @@ const Home = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           loading ? (
-            <ActivityIndicator size="large" className="text-orange-300 mt-5" />
+            <ActivityIndicator size="large" className="text-primary-300 mt-5" />
           ) : (
             <NoResults />
           )
@@ -119,14 +119,14 @@ const Home = () => {
                   Featured
                 </Text>
                 <TouchableOpacity>
-                  <Text className="text-base font-rubik-bold text-orange-300">
+                  <Text className="text-base font-rubik-bold text-primary-300">
                     See all
                   </Text>
                 </TouchableOpacity>
               </View>
 
               {latestPropertiesLoading ? (
-                <ActivityIndicator size="large" className="text-orange-300" />
+                <ActivityIndicator size="large" className="text-primary-300" />
               ) : !latestProperties || latestProperties.length === 0 ? (
                 <NoResults />
               ) : (
@@ -155,7 +155,7 @@ const Home = () => {
                   Our Recommendation
                 </Text>
                 <TouchableOpacity>
-                  <Text className="text-base font-rubik-bold text-orange-300">
+                  <Text className="text-base font-rubik-bold text-primary-300">
                     See all
                   </Text>
                 </TouchableOpacity>

@@ -85,7 +85,7 @@ const Property = () => {
 
           <View className="flex flex-row items-center gap-3">
             <View className="flex flex-row items-center px-4 py-2 bg-primary-100 rounded-full">
-              <Text className="text-xs font-rubik-bold text-orange-300">
+              <Text className="text-xs font-rubik-bold text-primary-300">
                 {property?.type}
               </Text>
             </View>
@@ -245,7 +245,7 @@ const Property = () => {
                 </View>
 
                 <TouchableOpacity>
-                  <Text className="text-orange-300 text-base font-rubik-bold">
+                  <Text className="text-primary-300 text-base font-rubik-bold">
                     View All
                   </Text>
                 </TouchableOpacity>
@@ -267,7 +267,7 @@ const Property = () => {
             </Text>
             <Text
               numberOfLines={1}
-              className="text-orange-300 text-start text-2xl font-rubik-bold"
+              className="text-primary-300 text-start text-2xl font-rubik-bold"
             >
               ${property?.price}
             </Text>

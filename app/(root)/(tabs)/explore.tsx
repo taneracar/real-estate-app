@@ -58,7 +58,7 @@ const Explore = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           loading ? (
-            <ActivityIndicator size="large" className="text-orange-300 mt-5" />
+            <ActivityIndicator size="large" className="text-primary-300 mt-5" />
           ) : (
             <NoResults />
           )
