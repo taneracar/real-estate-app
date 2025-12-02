@@ -25,7 +25,8 @@ const Auth = () => {
     if (result) {
       refetch();
     } else {
-      Alert.alert("Error", "Failed to login");
+     // Alert.alert("Error", "Failed to login");
+     console.log("Failed to login");
     }
   };
 
