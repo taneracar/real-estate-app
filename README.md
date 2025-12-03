@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+🤖 Giriş
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu proje, React Native kullanarak tam özellikli bir emlak uygulaması oluşturmayı amaçlar.
+Uygulamada Google ile giriş, dinamik mülk listeleri ve kullanıcı profilleri bulunur. Modern araçlarla geliştirilmiştir: Expo SDK, Appwrite, Tailwind CSS ve TypeScript.
 
-## Get started
+⚙️ Teknoloji Stack
 
-1. Install dependencies
+Expo: Android, iOS ve web için evrensel mobil uygulama geliştirme platformu.
 
-   ```bash
-   npm install
-   ```
+React Native: Component tabanlı mobil UI geliştirme framework’ü.
 
-2. Start the app
+Appwrite: Backend servisleri (auth, database, storage, real-time).
 
-   ```bash
-   npx expo start
-   ```
+TypeScript: Statik tip desteği ve güvenli kod yazma.
 
-In the output, you'll find options to open the app in a
+TailwindCSS & NativeWind: Hızlı ve tutarlı UI tasarımı için utility-first CSS.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🔋 Özellikler
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Google ile Giriş: Güvenli ve hızlı kullanıcı girişi.
 
-## Get a fresh project
+Anasayfa: Öne çıkan ve en yeni mülkleri gösterir, arama ve filtreleme.
 
-When you're ready, run:
+Keşfet Sayfası: Tüm mülkleri rahatça gezebilme.
 
-```bash
-npm run reset-project
-```
+Mülk Detay Sayfası: Resimler ve detaylı bilgi.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Profil Sayfası: Kullanıcı ayarları ve profil yönetimi.
 
-## Learn more
+Merkezi Veri Çekme: API çağrılarını yönetmek için custom hook.
 
-To learn more about developing your project with Expo, look at the following resources:
+🤸 Hızlı Başlangıç
+Gereksinimler
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Git
 
-## Join the community
+Node.js
 
-Join our community of developers creating universal apps.
+npm
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Repository’i Klonla
+git clone https://github.com/your-repo/react_native-restate.git
+cd react_native-restate
+
+Kurulum
+npm install
+
+Ortam Değişkenlerini Ayarla
+
+Proje kök dizininde .env.local dosyası oluştur ve aşağıdakileri ekle:
+
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+
+
+Appwrite hesabından kendi değerlerini al.
+
+Uygulamayı Başlat
+npx expo start
+
+
+Android emulator
+
+iOS simulator
+
+Expo Go
+
+Dosyaları app dizininde düzenleyerek geliştirmeye başlayabilirsin. Bu proje file-based routing kullanır.
